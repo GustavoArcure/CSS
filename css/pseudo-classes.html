@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Trabalhando com Pseudos-Classes</title>
+</head>
+<style>
+    a {
+        background-color: rgb(252, 0, 231);
+        color: rgb(255, 255, 255);
+        padding: 15px;
+        border-radius: 15px;
+        border: solid blue 5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        margin: 30px;
+        font-family: cursive;
+    }
+
+    /*comportamento de link a ser clicado*/
+    a:link {
+        color: #1fd419;
+        border: solid blue 2px;
+    } 
+
+    /*Comportamento do link após ser clicado*/
+    a:visited {
+        color: #000;
+        background-color: yellow;
+    }
+
+    /*Comportamento ao passar o mouse sobre*/
+    a:hover {
+        background-color: rgb(255, 208, 0);
+        color: blue;
+    }
+
+    /*Comportamento de link quando está clicado ou ativo*/
+    a:active {
+        background-color: #fc0e0e;
+        color: blue
+    }
+</style>
+
+<body>
+    <h1>Trabalhando com Pseudo-Classes</h1>
+    <hr>
+
+    <p>São usadas para definir um estado especial de um elemento.</p>
+
+    Serve para:
+    <ul>
+
+        <li>Estilizar um elemento quando um usuário passa o mouse sobre ele.</li>
+        <li>Estilo visitado e link visitados de forma diferente.</li>
+        <li>Estilizar um elemento quando ele recebe foco.</li>
+    </ul>
+
+    <h2>Pseudi-classes âncora</h2>
+
+    <p>Links podem ser exibidos de diferentes maneiras:
+
+        <h3>Exemplos</h3>
+
+        <p><a href="dddd" target="_blank">Pseudo-classe</a></p>
+    </p>
+
+</body>
+
+</html>
