@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+<head>
+    <meta charset="UTF-8">
+    <title>Exercício Posicionamento</title>
+    <style>
+    body{background-color: rgb(77, 213, 218);}
+    
+    .branco{
+        background: #ffffff;
+        width: 900px;
+        height: 900px;
+        margin: 0 auto;
+        position: relative;
+        
+    }
+    
+    #verde{position: absolute; bottom: 0; 
+        background-color: rgb(105, 201, 96);
+        width: 230px;
+        height: 270px;
+        
+        
+    }
+    #roxo{position: absolute; 
+        background-color: purple;
+        width: 230px;
+        height: 270px;
+        
+    }
+    #orange{position: absolute; right: 0;
+        background-color: rgb(241, 145, 20);
+        width: 230px;
+        height: 270px;
+ }
+        .paragrafo{
+            text-align: center; 
+            border: solid 2px rgb(255, 0, 0);
+            
+    }
+    h1{
+        background-color: yellow;
+        width: 100%;
+               
+    }
+    p{font-size:medium;
+    }
+    </style>
+    
+</head>
+<body>
+    <div class="branco">
+    <div id="verde"class="paragrafo"><h1>TRES</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique, nisl imperdiet tincidunt commodo, sem nulla finibus mauris, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique, nisl imperdiet tincidunt commodo, sem nulla finibus mauris, </div>
+    <div id="roxo" class="paragrafo"><h1>DOIS</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique, nisl imperdiet tincidunt commodo, sem nulla finibus mauris, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique, nisl imperdiet tincidunt commodo, sem nulla finibus mauris,</div>
+    <div id="orange" class="paragrafo"><h1>UM</h1><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique, nisl imperdiet tincidunt commodo, sem nulla finibus mauris, Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut tristique, nisl imperdiet tincidunt commodo, sem nulla finibus mauris,</div>
+</div>
+</body>
+</html>
