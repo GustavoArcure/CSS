@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Alinhamento de elementos e conteúdo usando Flexbox</title>
+    <style>
+        *,
+        *::before,
+        *::after {
+            /*USAR SEMPRE*/
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .container{
+            background-color: aqua;
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            border: solid 1px;
+            min-height: 250px;
+        }
+        .caixas{
+            background-color: orange;
+            width: 100px;
+            height: 100px;
+            border: inherit
+            /*Herda as configurações a borda anterior*/ 
+        }
+        #exemplo{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            float: left;
+        }
+        #UM{
+            align-self: flex-start;
+        }
+        #DOIS{
+            align-self: flex-start;
+            margin-bottom: 2px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Alinhamento de elementos e conteúdo usando Flexbox</h1>
+    <hr>
+    <p>Flexbox é um mecanismo do CSS3 que permite facilmente alinhamento e distribuição de elementos de conteúdo no
+        HTML.</p>
+    <p>Na prática, é uma técnica diferente para solucionar problemas e minimizar o grande uso de paddings, margins,
+        floats, positions na resolução de dificuldades na construção de layouts.</p>
+    <hr>
+    <h2>Exemplos</h2>
+    <!--Flex Container (Elemento PAI)-->
+    <div id="exemplo" class="container">
+
+        <!--Flex Items (Elementos FILHO)-->
+        <div class="caixas" id="UM">1</div>
+        <div class="caixas" id="DOIS">2</div>
+    <div class="caixas" id="TRÊS">3</div>
+        </div>
+        <p>As propriedades do flexbox são os seguintes:</p>
+        <ul>
+            <li><mark>flex-direction:</mark> Define qual direção o container deseja empilhar os itens (column,
+                column-reverse, row, rou-reverse).</li>
+            <li><mark>flex-wrap:</mark> Especifica se os itens flexíveis devem ser encapsulados ou não (flex-wrap: wrap,
+                nowrap, wrap-reverse).</li>
+            <li><mark>flex-flw:</mark> Propriedade abreviada para definir flex-direction e flex-wrap (flex-flow: row
+                wrap).</li>
+            <li><mark>justify-content:</mark> Alinhamento de itens (justify-content: center, flex-start- flex-end,
+                space-around, space-between).</li>
+            <li><mark>align-items:</mark> Propriedade é usada para alinhar os itens flexíveis.</li>
+            <li><mark>align-content:</mark> Propriedade é usada para alinhas as linhas flexíveis.</li>
+        </ul>
+        <p>Veja os exemplos das linhas a seguir no <a href="https://www.w3schools.com/css/css3_flexbox.asp" target="_blank">W3schools</a></p>
+</body>
+
+</html>

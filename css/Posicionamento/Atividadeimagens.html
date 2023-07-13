@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt/br">
+<head>
+    <meta charset="UTF-8">
+   
+    <title>Atividade Posicionamento</title>
+    <style>
+
+        body{background-color:#d7f5fa}
+
+        img{
+             width: 200px; 
+             height: 200px;
+             text-align: center;
+             padding: 10px;
+            }
+
+        .divao{
+            text-align: center;
+            background-color: rgb(3, 5, 36);
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+            
+        .imagem{
+        
+            margin: 4px;
+            flex-wrap: wrap;}
+
+            .venda{
+                border: solid black 1px;
+                width: 220px;
+                height: 347px;
+                text-align: center;
+                border-radius: 10px;
+                margin: 10px;
+                box-shadow: grey 1px 1px 1px;
+                background-color: #afcab8
+            }
+            .vendao{
+            
+                display: flex;
+                justify-content: center;
+                padding: 50px;
+                flex-wrap: wrap;
+                 
+            }
+
+            .img2{
+                border-radius: 15px;
+                width: 190px;
+                height: 170px;
+            }
+
+            h4{
+                margin: 3px
+            }
+
+            .img1:active{
+                color: blue;
+                border: solid 10px;
+            }
+            #chapeleiro:active{
+                color: rgb(255, 0, 0);
+                border: solid 10px;
+            }
+            .btn{
+             background-color: rgb(207, 77, 164);
+            color: rgb(255, 255, 255);
+            padding: 4px;
+            border-radius: 15px;
+            border: solid rgba(29, 206, 168, 0.904) 4px;
+            text-decoration: none;
+            text-transform: uppercase;
+             margin: 30px;
+            font-family: cursive;
+            }
+            a:hover{
+                background-color: rgb(5, 77, 53);
+                color: rgb(255, 28, 225);
+            }
+            h1, p{text-align: center;}
+           
+            
+
+    </style>
+</head>
+<body>
+    <h1>Clique na imagem correta</h1>
+    <p>Qual dessas imagens não faz parte do esporte?</p>
+    <div class="divao">
+        <div class="imagem"><img class= "img1" src="../Imagem/baseboll.jpg" alt="beiseboll"></div>
+        <div class="imagem"><img class= "img1" src="../Imagem/biribol.jpg" alt="Biriboll"></div>
+        <div class="imagem"><img class= "img1" src="../Imagem/volei-praia.jpg" alt="Volei de praia"></div>
+        <div class="imagem" ><img id= chapeleiro src="../Imagem/chapeleiro.jpg" alt="Chapeleiro"></div>
+    </div>
+
+    <hr>
+
+    <div class= "vendao">
+    <div class="venda">
+       <img class="img2" src="../Imagem/biribol.jpg" alt="Biriboll"> 
+       <h4>ITEM</h4>
+       <p class="descri">Descrição do item</p>
+       <a class="btn"href="#" >Acesse</a>
+    </div>
+    <div class="venda">
+        <img class="img2" src="../Imagem/biribol.jpg" alt="Biriboll"> 
+        <h4>ITEM</h4>
+        <p class="descri">Descrição do item</p>
+        <a class="btn"href="#" >Acesse</a>
+     </div>
+     <div class="venda">
+        <img class="img2" src="../Imagem/biribol.jpg" alt="Biriboll"> 
+        <h4>ITEM</h4>
+        <p class="descri" >Descrição do item</p>
+        <a class="btn"href="#" >Acesse</a>
+     </div>
+</div>
+    
+</body>
+</html>
